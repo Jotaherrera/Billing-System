@@ -10,56 +10,53 @@ using System.Windows.Forms;
 
 namespace BillingSystem
 {
-
     public partial class PrincipalScreen : Form
     {
-        int aux;
-        bool userConfirmation;
-        int chocolateCake = 20000;
-        int miloCake = 25000;
-        int chocolateBread = 8000;
-        int coffee = 2300;
-        int orangeJuice = 3500;
-        int water = 3200;
-        int cheeseStick = 2000;
-        int pastry = 4000;
-        int croissant = 4500;
+        private int aux;
+        private bool userConfirmation;
+        private int chocolateCake = 20000;
+        private int miloCake = 25000;
+        private int chocolateBread = 8000;
+        private int coffee = 2300;
+        private int orangeJuice = 3500;
+        private int water = 3200;
+        private int cheeseStick = 2000;
+        private int pastry = 4000;
+        private int croissant = 4500;
 
-        List<double> LchocolateCake = new List<double>();
-        List<double> LmiloCake = new List<double>();
-        List<double> LchocolateBread = new List<double>();
-        List<double> Lcoffee = new List<double>();
-        List<double> LorangeJuice = new List<double>();
-        List<double> Lwater = new List<double>();
-        List<double> LcheeseStick = new List<double>();
-        List<double> Lpastry = new List<double>();
-        List<double> Lcroissant = new List<double>();
+        private List<double> LchocolateCake = new List<double>();
+        private List<double> LmiloCake = new List<double>();
+        private List<double> LchocolateBread = new List<double>();
+        private List<double> Lcoffee = new List<double>();
+        private List<double> LorangeJuice = new List<double>();
+        private List<double> Lwater = new List<double>();
+        private List<double> LcheeseStick = new List<double>();
+        private List<double> Lpastry = new List<double>();
+        private List<double> Lcroissant = new List<double>();
 
-        int prodAux = 0;
+        private int prodAux = 0;
 
-        int acumChocolateCake;
-        int acumMiloCake;
-        int acumChocolateBread;
-        int acumCoffee;
-        int acumOrangeJuice;
-        int acumWater;
-        int acumCheeseStick;
-        int acumPastry;
-        int acumCroissant;
+        private int acumChocolateCake;
+        private int acumMiloCake;
+        private int acumChocolateBread;
+        private int acumCoffee;
+        private int acumOrangeJuice;
+        private int acumWater;
+        private int acumCheeseStick;
+        private int acumPastry;
+        private int acumCroissant;
 
-        int subtotal;
-        double taxes;
-        double total;
-        double grandTotal;
-        double service;
+        private int subtotal;
+        private double taxes;
+        private double total;
+        private double grandTotal;
+        private double service;
 
-        string[] userarr = new string[5];
-        string[] passarr = new string[5];
-
+        private string[] userarr = new string[5];
+        private string[] passarr = new string[5];
 
         public PrincipalScreen(string[] userarr, string[] passarr, int aux, bool userConfirmation)
         {
-
             this.userarr = userarr;
             this.passarr = passarr;
             this.aux = aux;
@@ -67,6 +64,7 @@ namespace BillingSystem
 
             InitializeComponent();
         }
+
         private void PrincipalScreen_Load(object sender, EventArgs e)
         {
             if (userConfirmation == false)
@@ -78,27 +76,24 @@ namespace BillingSystem
                 usersToolStripMenuItem.Enabled = true;
             }
         }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void LabelService_Click(object sender, EventArgs e)
         {
-
         }
 
         private void LabelTotal_Click(object sender, EventArgs e)
         {
-
         }
+
         private void Subtotal_Click(object sender, EventArgs e)
         {
-
         }
 
         /*=================================== Code ==================================*/
-
 
         public void PreviewPurchase()
         {
@@ -129,6 +124,7 @@ namespace BillingSystem
         /*----------------------------------- PAIRS --------------------------------------*/
 
         /*-------------------------------Chocolate Cake-----------------------------------*/
+
         public void CheckBoxChocolateCake_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxChocolateCake.Checked == true)
@@ -150,6 +146,7 @@ namespace BillingSystem
         }
 
         /*-------------------------------Milo Cake-----------------------------------*/
+
         private void CheckBoxMiloCake_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxMiloCake.Checked == true)
@@ -162,8 +159,8 @@ namespace BillingSystem
                 acumMiloCake = 0;
                 MiloCakeCounter.Value = 0;
             }
-
         }
+
         private void MiloCakeCounter_ValueChanged(object sender, EventArgs e)
         {
             acumMiloCake = miloCake * Convert.ToInt32(MiloCakeCounter.Value);
@@ -171,6 +168,7 @@ namespace BillingSystem
         }
 
         /*-------------------------------Chocolate Bread-----------------------------------*/
+
         private void CheckBoxChocolateBread_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxChocolateBread.Checked == true)
@@ -184,14 +182,15 @@ namespace BillingSystem
                 ChocolateBreadCounter.Value = 0;
             }
         }
+
         private void ChocolateBreadCounter_ValueChanged(object sender, EventArgs e)
         {
-
             acumChocolateBread = chocolateBread * Convert.ToInt32(ChocolateBreadCounter.Value);
             PreviewPurchase();
         }
 
         /*------------------------------- Coffee -----------------------------------*/
+
         private void CheckBoxCoffee_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxCoffee.Checked == true)
@@ -213,6 +212,7 @@ namespace BillingSystem
         }
 
         /*------------------------------- Water -----------------------------------*/
+
         private void CheckBoxOrangeJuice_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxOrangeJuice.Checked == true)
@@ -234,6 +234,7 @@ namespace BillingSystem
         }
 
         /*------------------------------- Water -----------------------------------*/
+
         private void CheckBoxWater_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxWater.Checked == true)
@@ -255,6 +256,7 @@ namespace BillingSystem
         }
 
         /*------------------------------- Cheese Stick -----------------------------------*/
+
         private void CheckBoxCheeseStick_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxCheeseStick.Checked == true)
@@ -268,6 +270,7 @@ namespace BillingSystem
                 CheeseStickCounter.Value = 0;
             }
         }
+
         private void CheeseStickCounter_ValueChanged(object sender, EventArgs e)
         {
             acumCheeseStick = cheeseStick * Convert.ToInt32(CheeseStickCounter.Value);
@@ -275,6 +278,7 @@ namespace BillingSystem
         }
 
         /*------------------------------- Pastry -----------------------------------*/
+
         private void CheckBoxPastry_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxPastry.Checked == true)
@@ -296,6 +300,7 @@ namespace BillingSystem
         }
 
         /*------------------------------- Croissant -----------------------------------*/
+
         private void CheckBoxCroissant_CheckedChanged(object sender, EventArgs e)
         {
             if (CheckBoxCroissant.Checked == true)
@@ -315,7 +320,9 @@ namespace BillingSystem
             acumCroissant = croissant * Convert.ToInt32(CroissantCounter.Value);
             PreviewPurchase();
         }
+
         /*------------------------------- BUTTONS -----------------------------------*/
+
         private void ResetButton_Click(object sender, EventArgs e)
         {
             CheckBoxService.Checked = false;
@@ -340,7 +347,6 @@ namespace BillingSystem
         {
             Users usersScreen = new Users(userarr, passarr, aux);
             usersScreen.Show();
-
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -350,17 +356,18 @@ namespace BillingSystem
             loginscreen.Show();
             this.Hide();
         }
+
         private void ReceiptTextBox_TextChanged(object sender, EventArgs e)
         {
-
         }
+
         private void CheckBoxService_CheckedChanged(object sender, EventArgs e)
         {
             PreviewPurchase();
         }
+
         private void ReceiptButton_Click(object sender, EventArgs e)
         {
-
             LchocolateCake.Add(Convert.ToDouble(ChocolateCakeCounter.Value));
             LmiloCake.Add(Convert.ToDouble(MiloCakeCounter.Value));
             LchocolateBread.Add(Convert.ToDouble(ChocolateBreadCounter.Value));
@@ -374,7 +381,7 @@ namespace BillingSystem
             prodAux += 1;
 
             string date = DateTime.UtcNow.ToString("dd-MM-yyyy");
-            string hour = DateTime.UtcNow.ToString("hh:mm:ss");
+            string hour = DateTime.Now.ToString("hh:mm:ss");
             ReceiptTextBox.Clear();
 
             ReceiptTextBox.AppendText("\t\tRESTAURANT NAME" + Environment.NewLine);
@@ -478,20 +485,24 @@ namespace BillingSystem
             ReceiptTextBox.AppendText("\t\t       VISIT US AT" + Environment.NewLine);
             ReceiptTextBox.AppendText("\t          www.restaurantname.com" + Environment.NewLine);
         }
+
         private void closeCashRegisterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CloseCashRegister closeCashRegister = new CloseCashRegister(chocolateCake, miloCake, chocolateBread, coffee, orangeJuice, water, cheeseStick, pastry, croissant, prodAux, LchocolateCake, LmiloCake, LchocolateBread, Lcoffee, LorangeJuice, Lwater, LcheeseStick, Lpastry, Lcroissant);
             closeCashRegister.Show();
         }
+
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawString(ReceiptTextBox.Text, new Font("Arial", 14, FontStyle.Regular), Brushes.Black, 120, 120);
         }
+
         private void toolStripPrintButton_Click(object sender, EventArgs e)
         {
             printPreviewDialog1.Document = printDocument1;
             printPreviewDialog1.ShowDialog();
         }
+
         private void ToolStripCopyButton_Click(object sender, EventArgs e)
         {
             ReceiptTextBox.SelectAll();
@@ -513,15 +524,11 @@ namespace BillingSystem
             saveFile.FileName = "Receipt";
             saveFile.Filter = "Text Files (*.txt)|*.txt|All files (*.*)|*.*";
 
-
             if (saveFile.ShowDialog() == DialogResult.OK)
             {
                 using (StreamWriter sw = new StreamWriter(saveFile.FileName))
                     sw.WriteLine(ReceiptTextBox.Text);
             }
         }
-
-
-
     }
 }
