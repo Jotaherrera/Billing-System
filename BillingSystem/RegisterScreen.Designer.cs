@@ -29,143 +29,142 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterScreen));
-            this.CancelRegisterButton = new System.Windows.Forms.Button();
-            this.RegisterButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PasswordBox = new System.Windows.Forms.TextBox();
-            this.UserBox = new System.Windows.Forms.TextBox();
-            this.Register = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            CancelRegisterButton = new Button();
+            RegisterButton = new Button();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
+            PasswordBox = new TextBox();
+            UserBox = new TextBox();
+            Register = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // CancelRegisterButton
             // 
-            this.CancelRegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(142)))), ((int)(((byte)(112)))));
-            this.CancelRegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.CancelRegisterButton.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CancelRegisterButton.ForeColor = System.Drawing.Color.White;
-            this.CancelRegisterButton.Location = new System.Drawing.Point(205, 387);
-            this.CancelRegisterButton.Name = "CancelRegisterButton";
-            this.CancelRegisterButton.Size = new System.Drawing.Size(76, 24);
-            this.CancelRegisterButton.TabIndex = 5;
-            this.CancelRegisterButton.Text = "Cancel";
-            this.CancelRegisterButton.UseVisualStyleBackColor = false;
-            this.CancelRegisterButton.Click += new System.EventHandler(this.CancelRegisterButton_Click);
+            CancelRegisterButton.BackColor = Color.FromArgb(12, 142, 112);
+            CancelRegisterButton.FlatStyle = FlatStyle.Popup;
+            CancelRegisterButton.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            CancelRegisterButton.ForeColor = Color.White;
+            CancelRegisterButton.Location = new Point(205, 387);
+            CancelRegisterButton.Name = "CancelRegisterButton";
+            CancelRegisterButton.Size = new Size(76, 24);
+            CancelRegisterButton.TabIndex = 5;
+            CancelRegisterButton.Text = "Cancel";
+            CancelRegisterButton.UseVisualStyleBackColor = false;
+            CancelRegisterButton.Click += CancelRegisterButton_Click;
             // 
             // RegisterButton
             // 
-            this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(142)))), ((int)(((byte)(112)))));
-            this.RegisterButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RegisterButton.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.RegisterButton.ForeColor = System.Drawing.Color.White;
-            this.RegisterButton.Location = new System.Drawing.Point(105, 387);
-            this.RegisterButton.Name = "RegisterButton";
-            this.RegisterButton.Size = new System.Drawing.Size(76, 24);
-            this.RegisterButton.TabIndex = 3;
-            this.RegisterButton.Text = "Register";
-            this.RegisterButton.UseVisualStyleBackColor = false;
-            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            RegisterButton.BackColor = Color.FromArgb(12, 142, 112);
+            RegisterButton.FlatStyle = FlatStyle.Popup;
+            RegisterButton.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            RegisterButton.ForeColor = Color.White;
+            RegisterButton.Location = new Point(105, 387);
+            RegisterButton.Name = "RegisterButton";
+            RegisterButton.Size = new Size(76, 24);
+            RegisterButton.TabIndex = 3;
+            RegisterButton.Text = "Register";
+            RegisterButton.UseVisualStyleBackColor = false;
+            RegisterButton.Click += RegisterButton_Click;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(124, 86);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(136, 133);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(124, 86);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(136, 133);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(142)))), ((int)(((byte)(112)))));
-            this.label2.Location = new System.Drawing.Point(149, 305);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 21);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Password";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(12, 142, 112);
+            label2.Location = new Point(149, 305);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 18);
+            label2.TabIndex = 10;
+            label2.Text = "Password";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(142)))), ((int)(((byte)(112)))));
-            this.label1.Location = new System.Drawing.Point(167, 249);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "User";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(12, 142, 112);
+            label1.Location = new Point(167, 249);
+            label1.Name = "label1";
+            label1.Size = new Size(44, 18);
+            label1.TabIndex = 11;
+            label1.Text = "User";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            label1.Click += label1_Click;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.BackColor = System.Drawing.Color.White;
-            this.PasswordBox.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordBox.ForeColor = System.Drawing.Color.Black;
-            this.PasswordBox.Location = new System.Drawing.Point(105, 329);
-            this.PasswordBox.Name = "PasswordBox";
-            this.PasswordBox.Size = new System.Drawing.Size(175, 22);
-            this.PasswordBox.TabIndex = 2;
-            this.PasswordBox.UseSystemPasswordChar = true;
-            this.PasswordBox.TextChanged += new System.EventHandler(this.PasswordBox_TextChanged);
+            PasswordBox.BackColor = Color.White;
+            PasswordBox.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            PasswordBox.ForeColor = Color.Black;
+            PasswordBox.Location = new Point(105, 329);
+            PasswordBox.Name = "PasswordBox";
+            PasswordBox.Size = new Size(175, 21);
+            PasswordBox.TabIndex = 2;
+            PasswordBox.UseSystemPasswordChar = true;
+            PasswordBox.TextChanged += PasswordBox_TextChanged;
             // 
             // UserBox
             // 
-            this.UserBox.BackColor = System.Drawing.Color.White;
-            this.UserBox.Font = new System.Drawing.Font("Montserrat", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UserBox.ForeColor = System.Drawing.Color.Black;
-            this.UserBox.Location = new System.Drawing.Point(105, 272);
-            this.UserBox.Name = "UserBox";
-            this.UserBox.Size = new System.Drawing.Size(175, 22);
-            this.UserBox.TabIndex = 1;
-            this.UserBox.TextChanged += new System.EventHandler(this.UserBox_TextChanged);
+            UserBox.BackColor = Color.White;
+            UserBox.Font = new Font("Microsoft Sans Serif", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            UserBox.ForeColor = Color.Black;
+            UserBox.Location = new Point(105, 272);
+            UserBox.Name = "UserBox";
+            UserBox.Size = new Size(175, 21);
+            UserBox.TabIndex = 1;
+            UserBox.TextChanged += UserBox_TextChanged;
             // 
             // Register
             // 
-            this.Register.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Register.AutoSize = true;
-            this.Register.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(142)))), ((int)(((byte)(112)))));
-            this.Register.Location = new System.Drawing.Point(140, 38);
-            this.Register.Name = "Register";
-            this.Register.Size = new System.Drawing.Size(104, 29);
-            this.Register.TabIndex = 7;
-            this.Register.Text = "Register";
-            this.Register.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Register.Click += new System.EventHandler(this.Register_Click);
+            Register.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            Register.AutoSize = true;
+            Register.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Register.ForeColor = Color.FromArgb(12, 142, 112);
+            Register.Location = new Point(140, 38);
+            Register.Name = "Register";
+            Register.Size = new Size(100, 25);
+            Register.TabIndex = 7;
+            Register.Text = "Register";
+            Register.TextAlign = ContentAlignment.MiddleCenter;
+            Register.Click += Register_Click;
             // 
             // RegisterScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(249)))), ((int)(((byte)(244)))));
-            this.ClientSize = new System.Drawing.Size(384, 461);
-            this.ControlBox = false;
-            this.Controls.Add(this.CancelRegisterButton);
-            this.Controls.Add(this.RegisterButton);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.PasswordBox);
-            this.Controls.Add(this.UserBox);
-            this.Controls.Add(this.Register);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "RegisterScreen";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Register";
-            this.Load += new System.EventHandler(this.RegisterScreen_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(255, 249, 244);
+            ClientSize = new Size(384, 461);
+            ControlBox = false;
+            Controls.Add(CancelRegisterButton);
+            Controls.Add(RegisterButton);
+            Controls.Add(pictureBox1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(PasswordBox);
+            Controls.Add(UserBox);
+            Controls.Add(Register);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximumSize = new Size(400, 500);
+            MinimumSize = new Size(400, 500);
+            Name = "RegisterScreen";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Register";
+            Load += RegisterScreen_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
